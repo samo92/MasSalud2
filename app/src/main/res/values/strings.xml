@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">+Salud2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_aboutUs">Acerca de Nosotros</string>
+
+    <string name="masUnam">23</string>
+    <string name="masInnovacion">21</string>
+    <string name="masHistoria">19</string>
+    <string name="masDescubrir">17</string>
+    <string name="masActualiadad">15</string>
+    <string name="masOpinion">13</string>
+    <string name="masGlobal">10</string>
+    <string name="masVistazos">8</string>
+
+    <string name="aboutUs">La creación del Departamento de Informática Biomédica fue aprobada por el
+        Consejo Técnico de la Facultad de Medicina, en la sesión celebrada el 19 de mayo de 2010.
+        Las asignaturas se imparten durante el segundo y tercer semestre de la licenciatura, son de
+        carácter obligatorio y sus objetivos generales son:
+    </string>
+
+    <string name="aboutUs_bullets">
+        \n • Adquirir los conocimientos, habilidades y actitudes necesarias para la búsqueda, identificación, análisis y aplicación efectiva de la información biomédica en la práctica de la medicina general.
+        \n • Describir los avances en las tecnologías de la información y la comunicación relacionadas con la medicina general.
+        \n • Utilizar racionalmente los recursos de la informática en el entorno de la práctica médica.
+    </string>
+
+    <string name="mision">
+        formar médicos generales que utilicen el razonamiento clínico, manejen, analicen y apliquen
+        efectivamente la información, el pensamiento crítico, las tecnologías de la información y
+        comunicación como fundamento para tomar decisiones basadas en la evidencia y solucionar
+        problemas de salud con profesionalismo y con una actitud ética y humanística.
+    </string>
+
+    <string name="vision">
+        como Departamento de Informática Biomédica, es ser modelo a seguir en el país y en América
+        Latina, en el que se formen médicos que coadyuven a elevar la calidad de la atención médica
+        por medio del uso racional de los recursos tecnológicos y por su contribución al desarrollo
+        de la enseñanza e investigación de las distintas disciplinas que la conforman.
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

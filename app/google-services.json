@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "700126865686",
+    "firebase_url": "https://android-massalud.firebaseio.com",
+    "project_id": "android-massalud",
+    "storage_bucket": "android-massalud.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700126865686:android:1373974effb3af11",
+        "android_client_info": {
+          "package_name": "ib.facmed.unam.mx.massalud2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700126865686-9sjqv7m5jl5rusrcjuc3n8r64ir6voof.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ib.facmed.unam.mx.massalud2",
+            "certificate_hash": "61ba45a6b1ec2d3db27738c2851da70f6161db23"
+          }
+        },
+        {
+          "client_id": "700126865686-rr0d689qvq80b4j1npnbtkco2f9pc28v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASNAFmmkg_Q5abZEQbLJrm53WEpCmDz0c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700126865686-rr0d689qvq80b4j1npnbtkco2f9pc28v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
