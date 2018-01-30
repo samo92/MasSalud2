@@ -52,7 +52,10 @@ public class MainActivity extends AppCompatActivity {
 
                     return true;
                 case R.id.navigation_aboutus:
+                    Bundle args = new Bundle();
+                    args.putString("url","http://www.massaludfacmed.unam.mx/?page_id=5572#8243");
                     AboutUsFragment aboutUsFragment = new AboutUsFragment();
+                    aboutUsFragment.setArguments(args);
                     getSupportFragmentManager().beginTransaction().replace(R.id.content, aboutUsFragment)
                             .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                             .addToBackStack(null).commit();
