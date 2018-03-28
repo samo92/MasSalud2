@@ -9,6 +9,7 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.MenuItem;
 
 import ib.facmed.unam.mx.massalud2.ui.AboutUsFragment;
@@ -95,6 +96,4 @@ public class MainActivity extends AppCompatActivity {
         //navigation.setSelectedItemId(R.id.navigation_home); // --> Metodo para definir el menu default al entrar a la actividad
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
-
-
 }
