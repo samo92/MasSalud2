@@ -19,7 +19,7 @@ import ib.facmed.unam.mx.massalud2.ui.HomeFragment;
 
 public class MainActivity extends AppCompatActivity {
 
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
+    /*private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
         @Override
@@ -32,8 +32,11 @@ public class MainActivity extends AppCompatActivity {
                                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                                 .addToBackStack(null).commit();
                     }else {
-                        HomeFragment homeFragment = new HomeFragment();
-                        getSupportFragmentManager().beginTransaction().replace(R.id.content, homeFragment)
+                        Bundle args = new Bundle();
+                        args.putString("url","http://www.massaludfacmed.unam.mx/?page_id=5572#8243");
+                        AboutUsFragment aboutUsFragment = new AboutUsFragment();
+                        aboutUsFragment.setArguments(args);
+                        getSupportFragmentManager().beginTransaction().replace(R.id.content, aboutUsFragment)
                                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                                 .addToBackStack(null).commit();
                     }
@@ -65,9 +68,9 @@ public class MainActivity extends AppCompatActivity {
             return false;
         }
 
-    };
+    };*/
 
-    private boolean haveNetworkConnection() {
+    /*private boolean haveNetworkConnection() {
         boolean haveConnectedWifi = false;
         boolean haveConnectedMobile = false;
 
@@ -82,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                     haveConnectedMobile = true;
         }
         return haveConnectedWifi || haveConnectedMobile;
-    }
+    }*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,6 +97,6 @@ public class MainActivity extends AppCompatActivity {
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         //navigation.setSelectedItemId(R.id.navigation_home); // --> Metodo para definir el menu default al entrar a la actividad
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        //navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 }

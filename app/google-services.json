@@ -1,35 +1,31 @@
 {
   "project_info": {
-    "project_number": "700126865686",
-    "firebase_url": "https://android-massalud.firebaseio.com",
-    "project_id": "android-massalud",
-    "storage_bucket": "android-massalud.appspot.com"
+    "project_number": "107494287338",
+    "firebase_url": "https://massalud-8b286.firebaseio.com",
+    "project_id": "massalud-8b286",
+    "storage_bucket": "massalud-8b286.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:700126865686:android:1373974effb3af11",
+        "mobilesdk_app_id": "1:107494287338:android:1373974effb3af11",
         "android_client_info": {
           "package_name": "ib.facmed.unam.mx.massalud2"
         }
       },
       "oauth_client": [
         {
-          "client_id": "700126865686-9sjqv7m5jl5rusrcjuc3n8r64ir6voof.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "ib.facmed.unam.mx.massalud2",
-            "certificate_hash": "61ba45a6b1ec2d3db27738c2851da70f6161db23"
-          }
+          "client_id": "107494287338-o4h56bdptfgisf4t7r74685bm4ilj0rp.apps.googleusercontent.com",
+          "client_type": 3
         },
         {
-          "client_id": "700126865686-rr0d689qvq80b4j1npnbtkco2f9pc28v.apps.googleusercontent.com",
+          "client_id": "107494287338-o4h56bdptfgisf4t7r74685bm4ilj0rp.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyASNAFmmkg_Q5abZEQbLJrm53WEpCmDz0c"
+          "current_key": "AIzaSyA7fe-zw42vmgmvz9OIwPl5x51OBNAjHEM"
         }
       ],
       "services": {
@@ -37,13 +33,8 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "700126865686-rr0d689qvq80b4j1npnbtkco2f9pc28v.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2

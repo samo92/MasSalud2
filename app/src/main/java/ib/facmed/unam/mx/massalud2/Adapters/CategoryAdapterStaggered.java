@@ -96,7 +96,7 @@ public class CategoryAdapterStaggered
         @Override
         public void onClick(View view) {
 
-            Bundle bundle = new Bundle();
+            /*Bundle bundle = new Bundle();
             Log.e("RESPUESTA: ", categoriaArray.get(getAdapterPosition()).getId());
             bundle.putString("id",categoriaArray.get(getAdapterPosition()).getId());
             AppCompatActivity appCompatActivity = (AppCompatActivity) view.getContext();
@@ -106,7 +106,7 @@ public class CategoryAdapterStaggered
                     .beginTransaction()
                     .replace(R.id.content, postFragment)
                     .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
-                    .addToBackStack(null).commit();
+                    .addToBackStack(null).commit();*/
         }
     }
 }

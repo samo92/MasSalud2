@@ -3,29 +3,20 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_unam"
-            android:title="+ UNAM" />
-        <item
-            android:id="@+id/nav_innovacion"
-            android:title="+ INNOVACION" />
-        <item
-            android:id="@+id/nav_historia"
-            android:title="+ HISTORIA" />
-        <item
             android:id="@+id/nav_descubrir"
             android:title="+ DESCUBRIR" />
         <item
-            android:id="@+id/nav_actualidad"
-            android:title="+ ACTUALIDAD" />
+            android:id="@+id/nav_datos"
+            android:title="+ DATOS" />
         <item
-            android:id="@+id/nav_opinion"
-            android:title="+ OPINION" />
+            android:id="@+id/nav_sexualidad"
+            android:title="+ SEXUALIDAD" />
         <item
-            android:id="@+id/nav_global"
-            android:title="+ GLOBAL" />
+            android:id="@+id/nav_saludable"
+            android:title="+ SALUDABLE" />
         <item
-            android:id="@+id/nav_vistazos"
-            android:title="+ VISTAZOS" />
+            android:id="@+id/nav_mente"
+            android:title="+ MENTE" />
     </group>
 
 </menu>

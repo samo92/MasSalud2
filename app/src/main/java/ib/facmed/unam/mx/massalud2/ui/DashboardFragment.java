@@ -34,9 +34,12 @@ import retrofit2.Response;
 public class DashboardFragment extends Fragment {
 
     String categoryImage[]={"http://ib.facmed.unam.mx/img/fondos/logosmall3.png"};
-    String categoryName[]={"+UNAM","+Innovacion","+Historia",
-            "+Descubrir","+Actualidad","+Opinion","+Global","+Vistazos"};
-    String categoryId[]={"23","21","19","17","15","13","10","8"};
+    /*String categoryName[]={"+UNAM","+Innovacion","+Historia",
+            "+Descubrir","+Actualidad","+Opinion","+Global","+Vistazos"};*/
+    String categoryName[]={"+Descubrir","+Datos","+Sexualidad",
+            "+Saludable","+Mente"};
+    //String categoryId[]={"23","21","19","17","15","13","10","8"};
+    String categoryId[]={"1","2","3","4","5"};
 
     private CategoryAdapterStaggered categoryAdapter;
     private ArrayList<CategoryDetails> categories;

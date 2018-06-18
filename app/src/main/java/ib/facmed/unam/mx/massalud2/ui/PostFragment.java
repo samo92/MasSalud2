@@ -53,7 +53,7 @@ public class PostFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_recyclerview,container,false);
         postId=getArguments().getString("id");
-        Log.e("RESPUESTA: ", postId.toString());
+
         initViews(view);
 
 

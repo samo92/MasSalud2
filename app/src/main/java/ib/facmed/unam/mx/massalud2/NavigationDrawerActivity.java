@@ -34,6 +34,21 @@ public class NavigationDrawerActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation_drawer);
 
+        if (!haveNetworkConnection()) {
+            FailFragment failFragment = new FailFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.content, failFragment)
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .addToBackStack(null).commit();
+        }else {
+            Bundle args = new Bundle();
+            args.putString("url", "http://www.massaludfacmed.unam.mx/");
+            AboutUsFragment aboutUsFragment = new AboutUsFragment();
+            aboutUsFragment.setArguments(args);
+            getSupportFragmentManager().beginTransaction().replace(R.id.content, aboutUsFragment)
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .addToBackStack(null).commit();
+        }
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.appbar);
         setSupportActionBar(toolbar);
 
@@ -47,7 +62,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        //navigation.setSelectedItemId(R.id.navigation_home); // --> Metodo para definir el menu default al entrar a la actividad
+        navigation.setSelectedItemId(R.id.navigation_home); // --> Metodo para definir el menu default al entrar a la actividad
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 
@@ -89,7 +104,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_unam) {
+        /*if (id == R.id.nav_unam) {
             llamarPostFragment("23");
 
         } else if (id == R.id.nav_innovacion) {
@@ -113,6 +128,48 @@ public class NavigationDrawerActivity extends AppCompatActivity
         } else if (id == R.id.nav_vistazos) {
             llamarPostFragment("8");
 
+        }*/
+
+        if (id == R.id.nav_descubrir){
+            Bundle args = new Bundle();
+            args.putString("url","http://www.massaludfacmed.unam.mx/?page_id=6508");
+            AboutUsFragment aboutUsFragment = new AboutUsFragment();
+            aboutUsFragment.setArguments(args);
+            getSupportFragmentManager().beginTransaction().replace(R.id.content, aboutUsFragment)
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .addToBackStack(null).commit();
+        } else if(id == R.id.nav_datos){
+            Bundle args = new Bundle();
+            args.putString("url","http://www.massaludfacmed.unam.mx/?page_id=59");
+            AboutUsFragment aboutUsFragment = new AboutUsFragment();
+            aboutUsFragment.setArguments(args);
+            getSupportFragmentManager().beginTransaction().replace(R.id.content, aboutUsFragment)
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .addToBackStack(null).commit();
+        } else if(id == R.id.nav_sexualidad){
+            Bundle args = new Bundle();
+            args.putString("url","http://www.massaludfacmed.unam.mx/?page_id=6527");
+            AboutUsFragment aboutUsFragment = new AboutUsFragment();
+            aboutUsFragment.setArguments(args);
+            getSupportFragmentManager().beginTransaction().replace(R.id.content, aboutUsFragment)
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .addToBackStack(null).commit();
+        } else if(id == R.id.nav_saludable){
+            Bundle args = new Bundle();
+            args.putString("url","http://www.massaludfacmed.unam.mx/?page_id=6517");
+            AboutUsFragment aboutUsFragment = new AboutUsFragment();
+            aboutUsFragment.setArguments(args);
+            getSupportFragmentManager().beginTransaction().replace(R.id.content, aboutUsFragment)
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .addToBackStack(null).commit();
+        } else if(id == R.id.nav_mente){
+            Bundle args = new Bundle();
+            args.putString("url","http://www.massaludfacmed.unam.mx/?page_id=6530");
+            AboutUsFragment aboutUsFragment = new AboutUsFragment();
+            aboutUsFragment.setArguments(args);
+            getSupportFragmentManager().beginTransaction().replace(R.id.content, aboutUsFragment)
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .addToBackStack(null).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -146,10 +203,17 @@ public class NavigationDrawerActivity extends AppCompatActivity
                                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                                 .addToBackStack(null).commit();
                     }else {
-                        HomeFragment homeFragment = new HomeFragment();
-                        getSupportFragmentManager().beginTransaction().replace(R.id.content, homeFragment)
+                        Bundle args = new Bundle();
+                        args.putString("url","http://www.massaludfacmed.unam.mx/");
+                        AboutUsFragment aboutUsFragment = new AboutUsFragment();
+                        aboutUsFragment.setArguments(args);
+                        getSupportFragmentManager().beginTransaction().replace(R.id.content, aboutUsFragment)
                                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                                 .addToBackStack(null).commit();
+                        /*HomeFragment homeFragment = new HomeFragment();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.content, homeFragment)
+                                .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                                .addToBackStack(null).commit();*/
                     }
                     return true;
                 case R.id.navigation_dashboard:
@@ -181,7 +245,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
 
     };
 
-    private boolean haveNetworkConnection() {
+    private boolean haveNetworkConnection(){
         boolean haveConnectedWifi = false;
         boolean haveConnectedMobile = false;
 
