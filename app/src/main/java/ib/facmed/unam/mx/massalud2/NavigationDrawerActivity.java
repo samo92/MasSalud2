@@ -21,6 +21,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import ib.facmed.unam.mx.massalud2.ui.AboutUsFragment;
+import ib.facmed.unam.mx.massalud2.ui.CreditosFragment;
 import ib.facmed.unam.mx.massalud2.ui.DashboardFragment;
 import ib.facmed.unam.mx.massalud2.ui.FailFragment;
 import ib.facmed.unam.mx.massalud2.ui.HomeFragment;
@@ -92,7 +93,10 @@ public class NavigationDrawerActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            CreditosFragment creditosFragment = new CreditosFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.content, creditosFragment)
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .addToBackStack(null).commit();
         }
 
         return super.onOptionsItemSelected(item);
@@ -216,7 +220,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
                                 .addToBackStack(null).commit();*/
                     }
                     return true;
-                case R.id.navigation_dashboard:
+                /*case R.id.navigation_dashboard:
                     if (!haveNetworkConnection()) {
                         FailFragment failFragment = new FailFragment();
                         getSupportFragmentManager().beginTransaction().replace(R.id.content, failFragment)
@@ -229,7 +233,7 @@ public class NavigationDrawerActivity extends AppCompatActivity
                                 .addToBackStack(null).commit();
                     }
 
-                    return true;
+                    return true;*/
                 case R.id.navigation_aboutus:
                     Bundle args = new Bundle();
                     args.putString("url","http://www.massaludfacmed.unam.mx/?page_id=5572#8243");
